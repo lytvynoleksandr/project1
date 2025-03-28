@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Таблиця з об’єднаними клітинками</title>
+  <style>
+    .bordered-table {
+      border-collapse: collapse; 
+      border: 1px solid black; 
+    }
+    .bordered-table th,
+    .bordered-table td {
+      border: 1px solid black; 
+      padding: 5px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <p>Для створення сайтів використовуються наступні засоби:</p>
+
+  <table class="bordered-table">
+    <thead>
+      <tr>
+        <th colspan="4">Вебтехнології</th>
+      </tr>
+      <tr>
+        <th>Назва технології</th>
+        <th>Back-end</th>
+        <th>Front-end</th>
+        <th>Full stack</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>HTML</td>
+        <td>-</td>
+        <td>+</td>
+        <td>+</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>-</td>
+        <td>+</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>JS</td>
+        <td>+</td>
+        <td>+</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Ruby</td>
+        <td>+</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>+</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br><br>
+
+  <table>
+    <thead>
+      <tr>
+        <th colspan="4">Вебтехнології</th>
+      </tr>
+      <tr>
+        <th>Назва технології</th>
+        <th>Back-end</th>
+        <th>Front-end</th>
+        <th>Full stack</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>HTML</td>
+        <td>-</td>
+        <td>+</td>
+        <td>+</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>-</td>
+        <td>+</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>JS</td>
+        <td>+</td>
+        <td>+</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Ruby</td>
+        <td>+</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>+</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br><br>
+
+  <section>
+    <h2>Контрольні питання та відповіді</h2>
+    <p><strong>Як створити таблицю?</strong><br>
+    Таблицю створюють за допомогою тегів <code>&lt;table&gt;</code> (початок і кінець таблиці), <code>&lt;tr&gt;</code> (рядки), <code>&lt;th&gt;</code> (заголовки стовпців) та <code>&lt;td&gt;</code> (комірки з даними). Структура включає також необов'язкові теги <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code> та <code>&lt;tfoot&gt;</code>.</p>
+    
+    <p><strong>Як об'єднати клітинки таблиці?</strong><br>
+    Для об'єднання клітинок використовують атрибути:</p>
+    <ul>
+      <li><code>colspan="число"</code> - об'єднує комірки по горизонталі (стовпці)</li>
+      <li><code>rowspan="число"</code> - об'єднує комірки по вертикалі (рядки)</li>
+    </ul>
+
+    <p><strong>Як задати товщину ліній таблиці?</strong><br>
+    У CSS використовують властивість <code>border</code> з указанням товщини (наприклад, 1px), типу лінії (solid) та кольору (black). Також додають <code>border-collapse: collapse;</code>, щоб прибрати проміжки між лініями.</p>
+
+    <p><strong>Що таке футер таблиці?</strong><br>
+    Футер (<code>TFOOT</code>) - це нижня частина таблиці, зазвичай призначена для останнього рядка з підсумковою або додатковою інформацією.</p>
+
+    <p><strong>Що таке хедер таблиці?</strong><br>
+    Хедер (<code>THEAD</code>) - це верхня частина таблиці з заголовками стовпців. Текст у комірках хедера зазвичай форматується жирним шрифтом за допомогою тегу <code>&lt;th&gt;</code>.</p>
+  </section>
+</body>
+</html>
